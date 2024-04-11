@@ -1,5 +1,8 @@
 package se.campusmolndal.unitweb_demo.util;
 
+import lombok.Getter;
+
+@Getter
 public class Bank {
     private double balance;
     public boolean deposit(double amount) {
@@ -16,9 +19,4 @@ public class Bank {
         balance += amount;
         return true;
     }
-
-    public double getBalance() {
-        return balance;
-    }
-
 }
